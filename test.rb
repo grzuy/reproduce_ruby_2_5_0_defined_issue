@@ -1,10 +1,11 @@
-require "redis"
-
-class Store
+class A
 end
 
-if defined?(::Redis::Store)
-  puts "#{::Redis::Store} is defined"
+class B
+end
+
+if defined?(::A::B)
+  puts "#{::A::B} is defined"
 else
   puts "not defined"
 end
