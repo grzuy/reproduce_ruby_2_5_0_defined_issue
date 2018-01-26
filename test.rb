@@ -4,11 +4,7 @@ class Store
 end
 
 if defined?(::Redis::Store)
-  puts "defined"
-
-  puts ::Redis::Store.class.to_s
-
-  puts "Everything ok"
+  puts "#{::Redis::Store} is defined"
 else
   puts "not defined"
 end
