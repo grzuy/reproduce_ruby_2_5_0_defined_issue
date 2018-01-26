@@ -5,8 +5,9 @@ class B
 end
 
 if defined?(A::B)
-  puts "fail"
+  puts "defined"
+
   puts A::B
 else
-  puts "pass"
+  puts "not defined"
 end
